@@ -28,9 +28,7 @@ class ViewController: UIViewController {
         
         //初始化一个 不可变 LAContext对象
         let context: LAContext! = LAContext()
-        
         var errora: NSError?
-        
         var msg: String?
         
         //查看设备是否支持指纹识别，只支持iOS8以上
@@ -38,7 +36,6 @@ class ViewController: UIViewController {
         {
             self.ui_beginTouchIdButton.enabled = true
             msg = "touch id 可以使用"
-            
         }
         else
         {
